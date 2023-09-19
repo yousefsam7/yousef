@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 80px;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid white; 
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin-left:50px;
+    margin-right:10px;
+}
+nav ul#naser {
+    position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        display: none;
+        background-color: brown;
+}
+.fa-solid{
+    display: block;
+    list-style: none;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+a#how {
+    padding-left: 50px;
+} 
+a#show{
+    display: none;
+}
+a#show:focus + ul {
+    display: block;
+}
+
+li.box {
+    background-color:white;
+}
+li.box a{
+    color: black; }
+
+section#l-div {
+ width: 100%;
+ height: 100vh;
+ background-image: url(/image/WhatsApp\ Image\ 2022-11-01\ at\ 1.29.32\ AM.jpeg);
+ object-fit: cover;
+ display: flex;
+ align-items: center;
+ padding: 0 110px;
+ color: white;
+}
+section h1 {
+    font-size: 48px;
+} 
+
+section#l-div p{
+    font-size: 38px;
+    border-bottom:1px solid white ;
+    padding-bottom: 20px;
+    margin: 30px 0;
+}
+ 
+section div.link {
+    display: flex;
+    justify-content: space-around;
+}
+
+section#r-div {
+    display: flex;
+    padding: 50px 0 ;
+}
+section#r-div h2 {
+    font-size: 48px;
+}
+section#r-div h2 span {
+    color: navajowhite;
+}
+section#r-div p {
+    font-size: 30px;
+}
+section#r-div div.covid-1 {
+    width: 25%;
+    padding: 0 30px;
+    text-align: right;
+}
+section#r-div div.covid-2 {
+    width: 75%;
+    padding: 0 30px;
+}
+section#r-div div.covid-2 p {
+    font-size: 20px;
+}
+section#r-div div.skills {
+    margin-top: 30px; 
+} 
+section#r-div div.skill {
+    margin-bottom: 30px;
+}
+section#r-div div.skill .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+section#r-div div.skill .ber {
+    height: 10px;
+    background-color: #eee;
+}
+section#r-div div.skill .ber div {
+    height: 100%;
+    background-color: blue;
+
+}
+section#r-div div.skill .ber div.html{
+    width: 90%;
+}
+section#r-div div.skill .ber div.css {
+    width: 80%;
+}
+section#r-div div.skill .ber div.java {
+    width: 78%;
+}
+section#pro-max{
+    background-color: #eee;
+    padding: 50px 10px;
+    display: flex;
+}
+section#pro-max h2{
+    font-size: 40PX;
+}
+section#pro-max h2 span{
+    color: navajowhite;
+}
+.fa-solid  {
+    font-size: 50px;
+}
+section#pro-max > div {
+    padding: 0 25px;
+}
+section#pro-max div.max  {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    gap: 0 15px;
+  
+}
+section#pro-max div.max div {
+    background-color: white;
+    padding: 30px;
+}
+section#pro-max div.pro {
+    width: 25%;
+    text-align: right;
+}
+section#pro-max div.max h2 {
+    margin: 20px 0;
+}
+section#pro-max div.max div:hover {
+    background-color:brown;
+} 
+#works {
+    display: flex;
+}
+#works .home{
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+}
+#works .home p {
+    font-size: 30px;
+}
+#works .home p span {
+    color: navajowhite;
+    font-size: 120px;
+}
+#works .about{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+
+#works .about div {
+    overflow: hidden;
+}
+
+#works .about img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+#works .about div.you-img{
+    grid-column: span 2;
+    overflow: hidden;
+}
+#works .about img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+body{
+    margin: 0;
+}
+#works div.lm-w span{
+    width: 60px;
+    height: 60px;
+    margin-top: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    display: inline-block;
+    animation-name: sam;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.lm-w .span-2{
+
+    animation-delay: 0.3s;
+}
+.lm-w .span-3{
+    animation-delay: 0.4s;
+} 
+footer div{
+text-align: center;
+background-color: #333;
+padding: 10px 0 ;
+color: white;
+font-size: 25px;
+margin-top: 20px;
+}
+footer a {
+    margin: 5px 20px;  
+}
+footer p {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+@keyframes sam{
+    from{
+        transform: translateY(0) ;
+        background-color: brown;
+    }
+    to{
+        transform:  translateY(100px);
+        background-color: blue;
+    }
+}
+
+@media (max-width: 700px){
+    a#show  {
+        display: block;
+    }
+    nav{
+        position: relative;
+        background-color: #333;
+        padding: 15px 60px;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        display: none;
+        background-color: brown;
+        
+    }
+    nav ul li{
+        display: block;
+        padding: 10px 25px;
+        list-style: none;}
+    }
